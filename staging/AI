@@ -1,0 +1,1 @@
+{"testSteps":[{"stepNumber":1,"stepDescription":"click by image","userAction":"Click By Image","identifierType":"Find by Image","identifierValue":"waldo/14115fd7285a493b8f2985e719277e7a.png","index":"","stepData":null,"controlType":"WebElement","dataColumn":"1","property":"text","takeScreenshot":true,"optionalStep":false,"dataViewAttribute":"text","parameterized":false}]}
