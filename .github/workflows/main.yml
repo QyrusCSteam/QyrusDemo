@@ -11,15 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout external repository
       uses: actions/checkout@v2
+      with:
+        repository: 'QQyrus/node-cli'  # Replace with the correct repository in the format 'username/repo'
+        token: ${{ secrets.TOKEN }}      # Ensure you have appropriate permissions
+        ref: 'master'                             # Optional: specify branch, commit, or tag
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18.20.4'
+        node-version: '18.20.4'                 # Adjust based on your needs
 
-    
+    - name: Change to project directory and install dependencies
+      run: |
+        cd node-cli-master
+        ls
+        npm install
+        
 
     - name: Run Automation Test
       run: |
