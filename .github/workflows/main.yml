@@ -32,11 +32,11 @@ jobs:
 
     - name: Run Automation Test
       run: |
-        node ./index.cjs web --endPoint "https://gateway.qyrus.com:443" \
-        --username "archanat@ext.deltacapita.com" \
-        --passcode "U2hpdmFTaGl2YUAx" \
-        --teamName "Trial Team" \
-        --projectName "Web Automation" \
+        node ./index.cjs web --endPoint "https://stg-gateway.quinnox.info:8243" \
+        --username "dakoki9526@massefm.com" \
+        --passcode "UGFzc3dvcmRAMTIzCg==" \
+        --teamName "CTC End To End" \
+        --projectName "Healer Project" \
         --suiteName "Test" \
         --parameterFileSource "DATATABLE" \
         --browserOS "windows" \
