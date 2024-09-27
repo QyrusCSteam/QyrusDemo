@@ -25,7 +25,7 @@ jobs:
 
     - name: Change to project directory and install dependencies
       run: |
-        cd node-cli-master
+        # cd node-cli-master
         ls
         npm install
         
