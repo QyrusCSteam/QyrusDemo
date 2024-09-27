@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: 'QQyrus/node-cli'  # Replace with the correct repository in the format 'username/repo'
-        token: ${{ secrets.GITHUB_TOKEN }}      # Ensure you have appropriate permissions
+        token: ${{ secrets.TOKEN }}      # Ensure you have appropriate permissions
         ref: 'master'                             # Optional: specify branch, commit, or tag
 
     - name: Set up Node.js
